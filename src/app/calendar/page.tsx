@@ -133,7 +133,7 @@ function CalendarPageContent() {
             Social Publishing Calendar
           </h1>
           <p className="text-xs text-slate-400 mt-1">
-            Scheduling intelligence across 6 accounts with conflict resolution and empty-day detection
+            Scheduling intelligence across active Instagram & talent channels with conflict resolution and empty-day detection
           </p>
         </div>
 
@@ -211,7 +211,7 @@ function CalendarPageContent() {
             </p>
           ) : (
             <p className="text-[11px] text-emerald-400/80">
-              No overlapping posts within 60 minutes across your 6 accounts.
+              No overlapping posts within 60 minutes across your accounts.
             </p>
           )}
         </div>

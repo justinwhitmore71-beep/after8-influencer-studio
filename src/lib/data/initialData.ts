@@ -174,7 +174,7 @@ export const INITIAL_PERSONAS: Persona[] = [
 ];
 
 export const INITIAL_SOCIAL_ACCOUNTS: SocialAccount[] = [
-  // Ava Montcrief Accounts
+  // Ava Montcrief (Instagram)
   {
     id: 'acc-ava-ig',
     workspace_id: 'ws-after8-talent-001',
@@ -192,24 +192,7 @@ export const INITIAL_SOCIAL_ACCOUNTS: SocialAccount[] = [
     created_at: '2026-10-22T00:00:00Z',
     updated_at: '2026-11-07T08:30:00Z',
   },
-  {
-    id: 'acc-ava-tt',
-    workspace_id: 'ws-after8-talent-001',
-    persona_id: 'persona-ava-montcrief',
-    platform: 'tiktok',
-    handle: '@avamontcrief',
-    display_name: 'Ava Montcrief | Rookie Season',
-    profile_url: 'https://tiktok.com/@avamontcrief',
-    follower_count: 0,
-    weekly_follower_growth: 0,
-    total_views: 0,
-    avg_engagement_rate: 0.00,
-    status: 'active',
-    auth_connected: false,
-    created_at: '2026-10-22T00:00:00Z',
-    updated_at: '2026-11-07T08:30:00Z',
-  },
-  // Jackie Quintera Accounts
+  // Jackie Quintera (Instagram)
   {
     id: 'acc-jackie-ig',
     workspace_id: 'ws-after8-talent-001',
@@ -227,24 +210,7 @@ export const INITIAL_SOCIAL_ACCOUNTS: SocialAccount[] = [
     created_at: '2026-10-22T00:00:00Z',
     updated_at: '2026-11-07T08:30:00Z',
   },
-  {
-    id: 'acc-jackie-tt',
-    workspace_id: 'ws-after8-talent-001',
-    persona_id: 'persona-jackie-quintera',
-    platform: 'tiktok',
-    handle: '@jackiequintera',
-    display_name: 'Jackie Quintera • Shift Economics',
-    profile_url: 'https://tiktok.com/@jackiequintera',
-    follower_count: 0,
-    weekly_follower_growth: 0,
-    total_views: 0,
-    avg_engagement_rate: 0.00,
-    status: 'active',
-    auth_connected: false,
-    created_at: '2026-10-22T00:00:00Z',
-    updated_at: '2026-11-07T08:30:00Z',
-  },
-  // Sienna Torneu Accounts
+  // Sienna Torneu (Instagram)
   {
     id: 'acc-sienna-ig',
     workspace_id: 'ws-after8-talent-001',
@@ -262,23 +228,6 @@ export const INITIAL_SOCIAL_ACCOUNTS: SocialAccount[] = [
     created_at: '2026-10-22T00:00:00Z',
     updated_at: '2026-11-07T08:30:00Z',
   },
-  {
-    id: 'acc-sienna-tt',
-    workspace_id: 'ws-after8-talent-001',
-    persona_id: 'persona-sienna-torneu',
-    platform: 'tiktok',
-    handle: '@siennatorneu',
-    display_name: 'Sienna Torneu • The Wildcard',
-    profile_url: 'https://tiktok.com/@siennatorneu',
-    follower_count: 0,
-    weekly_follower_growth: 0,
-    total_views: 0,
-    avg_engagement_rate: 0.00,
-    status: 'active',
-    auth_connected: false,
-    created_at: '2026-10-22T00:00:00Z',
-    updated_at: '2026-11-07T08:30:00Z',
-  },
 ];
 
 export const INITIAL_CONTENT_ITEMS: ContentItem[] = [
@@ -286,12 +235,12 @@ export const INITIAL_CONTENT_ITEMS: ContentItem[] = [
     id: 'cnt-intro-ava',
     workspace_id: 'ws-after8-talent-001',
     persona_id: 'persona-ava-montcrief',
-    social_account_id: 'acc-ava-tt',
-    platform: 'tiktok',
+    social_account_id: 'acc-ava-ig',
+    platform: 'instagram',
     title: 'Pilot: A8-AVA-INTRO-P01 | "Vegas Said, That\'s Cute"',
     description: 'Ava Montcrief intro pilot (Rookie Season). Reflecting on college athletics vs the chaotic reality of Las Vegas hospitality tryouts.',
     content_pillar: 'Rookie Season Diaries: The Audition Prep',
-    content_format: 'tiktok_video',
+    content_format: 'reel',
     hook: 'I thought athletic tryouts were brutal. Vegas said, that’s cute.',
     caption: 'Coming to Vegas at 21 with a college degree thinking hard work solves everything. Episode 1 of WILL VEGAS HIRE HER? Let’s see what happens when the clipboard meets reality. 🏆✨\n\nFictional AI Creator • Series: WILL VEGAS HIRE HER? • @after8digital',
     hashtags: ['#WillVegasHireHer', '#AvaMontcrief', '#VegasAuditions', '#RookieSeason', '#HospitalityLife'],
@@ -319,12 +268,12 @@ export const INITIAL_CONTENT_ITEMS: ContentItem[] = [
     id: 'cnt-intro-jackie',
     workspace_id: 'ws-after8-talent-001',
     persona_id: 'persona-jackie-quintera',
-    social_account_id: 'acc-jackie-tt',
-    platform: 'tiktok',
+    social_account_id: 'acc-jackie-ig',
+    platform: 'instagram',
     title: 'Pilot: A8-JQ-INTRO-P01 | "The Exit Number: Keep the Money"',
     description: 'Jackie Quintera intro pilot. Explaining the fundamental difference between making a Vegas fortune and spending it before Tuesday.',
     content_pillar: 'The Exit Number: Shift Economics & Tip Math',
-    content_format: 'tiktok_video',
+    content_format: 'reel',
     hook: 'You can make a fortune in Vegas. You can also spend it before Tuesday.',
     caption: 'Rule #1 from a real Vegas server: Never confuse gross tips with net freedom. Calculate your Exit Number before you start booking tables. 🍸📊\n\nFictional AI Creator • Series: WILL VEGAS HIRE HER? • @after8digital',
     hashtags: ['#WillVegasHireHer', '#JackieQuintera', '#TheExitNumber', '#VegasServers', '#WorkerReality'],
@@ -675,16 +624,16 @@ export const INITIAL_STRATEGY_REPORT: WeeklyStrategyReport = {
     {
       day: 'Monday',
       persona: 'Ava Montcrief',
-      platform: 'tiktok',
-      format: 'tiktok_video',
+      platform: 'instagram',
+      format: 'reel',
       hook: 'I thought athletic tryouts were brutal. Vegas said, that’s cute.',
       concept: 'Rookie Season Intro (A8-AVA-INTRO-P01): Ava’s fitness prep and confronting selection reality.'
     },
     {
       day: 'Tuesday',
       persona: 'Jackie Quintera',
-      platform: 'tiktok',
-      format: 'tiktok_video',
+      platform: 'instagram',
+      format: 'reel',
       hook: 'You can make a fortune in Vegas. You can also spend it before Tuesday.',
       concept: 'The Exit Number Intro (A8-JQ-INTRO-P01): Real server economics and shift math.'
     },
@@ -715,15 +664,15 @@ export const INITIAL_STRATEGY_REPORT: WeeklyStrategyReport = {
     {
       day: 'Saturday',
       persona: 'Sienna Torneu',
-      platform: 'tiktok',
-      format: 'tiktok_video',
+      platform: 'instagram',
+      format: 'reel',
       hook: 'Sunday at Sienna’s: How to survive 3 seasonal contracts without losing your mind.',
       concept: 'Candid lifestyle advice for seasonal hospitality travelers.'
     },
     {
       day: 'Sunday',
       persona: 'Ensemble Cast',
-      platform: 'both',
+      platform: 'instagram',
       format: 'reel',
       hook: 'Three different girls. One Vegas audition season. Who actually gets hired?',
       concept: 'Series teaser launching WILL VEGAS HIRE HER? across @after8digital.'

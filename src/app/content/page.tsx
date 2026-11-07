@@ -256,7 +256,7 @@ function ContentPageContent() {
             Content Pipeline & Management System
           </h1>
           <p className="text-xs text-slate-400 mt-1">
-            End-to-end 8-stage lifecycle from Idea to Analyzed across all 3 personas and 6 social channels
+            End-to-end 8-stage lifecycle from Idea to Analyzed across all 3 personas and active social channels
           </p>
         </div>
 

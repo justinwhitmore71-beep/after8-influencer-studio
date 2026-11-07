@@ -85,7 +85,7 @@ export default function SettingsPage() {
                   Shared Workspace Collaborators ({members.length})
                 </h3>
                 <p className="text-xs text-slate-400 mt-0.5">
-                  Both administrators have full synchronized access across all 3 personas and 6 accounts
+                  Both administrators have full synchronized access across all 3 personas and active social accounts
                 </p>
               </div>
 
@@ -254,7 +254,7 @@ export default function SettingsPage() {
               Reset & Demo Seed Controls
             </h3>
             <p className="text-slate-400 text-xs">
-              Restore default rich dataset (Ava Montcrief, Jackie Quintera, Sienna Torneu, 6 accounts, pipeline items, tasks, and historical metrics).
+              Restore default rich dataset (Ava Montcrief, Jackie Quintera, Sienna Torneu, active accounts, pipeline items, tasks, and historical metrics).
             </p>
 
             <button
