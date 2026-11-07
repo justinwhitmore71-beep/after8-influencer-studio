@@ -630,17 +630,6 @@ export default function Dashboard() {
               </div>
             )}
           </div>
-                        <span className="text-[10px] text-slate-500 block">ER</span>
-                        <span className="font-bold text-emerald-400">
-                          {post.metrics?.engagement_rate}%
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
         </div>
 
         {/* Column 3: Shared Tasks & Quick Operations */}
