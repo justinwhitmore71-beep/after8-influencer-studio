@@ -70,7 +70,7 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-const STORAGE_KEY_PREFIX = 'after8_talent_ops_v6_';
+const STORAGE_KEY_PREFIX = 'after8_talent_ops_v8_clean_start_';
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
   const [workspace] = useState<Workspace>(INITIAL_WORKSPACE);

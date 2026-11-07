@@ -647,8 +647,13 @@ export default function Dashboard() {
               <span className="text-[11px] text-slate-400">Collaborative</span>
             </div>
 
-            <div className="space-y-2.5">
-              {pendingTasks.map((task) => {
+            {pendingTasks.length === 0 ? (
+              <div className="py-8 text-center text-slate-500 text-xs border border-dashed border-slate-800 rounded-xl">
+                No active tasks. Clean launch slate ready for real production!
+              </div>
+            ) : (
+              <div className="space-y-2.5">
+                {pendingTasks.map((task) => {
                 const isUrgent = task.priority === 'urgent';
                 const isHigh = task.priority === 'high';
 
@@ -688,7 +693,8 @@ export default function Dashboard() {
                   </div>
                 );
               })}
-            </div>
+              </div>
+            )}
           </div>
 
           {/* Quick Production Actions */}
