@@ -29,7 +29,7 @@ export const INITIAL_MEMBERS: WorkspaceMember[] = [
     email: 'evan@after8.digital',
     full_name: 'Evan Surratt (Founder / Approvals)',
     role: 'owner',
-    avatar_url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=256&q=80',
+    avatar_url: '/team/evan_surratt.jpg',
     created_at: '2026-10-22T00:00:00Z',
   },
   {
@@ -39,7 +39,7 @@ export const INITIAL_MEMBERS: WorkspaceMember[] = [
     email: 'justin@after8.digital',
     full_name: 'Justin Whitmore (Production Lead)',
     role: 'admin',
-    avatar_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80',
+    avatar_url: '/team/justin_whitmore.jpg',
     created_at: '2026-10-22T00:00:00Z',
   },
 ];

@@ -109,9 +109,17 @@ export default function Navbar() {
                 onClick={() => setUserDropdownOpen(!userDropdownOpen)}
                 className="flex items-center space-x-2.5 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-700 hover:border-slate-600 transition text-sm"
               >
-                <div className="w-6 h-6 rounded-full bg-gradient-to-r from-purple-500 to-amber-500 flex items-center justify-center text-[11px] font-bold text-white">
-                  {currentUser.full_name.charAt(0)}
-                </div>
+                {currentUser.avatar_url ? (
+                  <img
+                    src={currentUser.avatar_url}
+                    alt={currentUser.full_name}
+                    className="w-7 h-7 rounded-full object-cover border border-purple-400/50 shadow"
+                  />
+                ) : (
+                  <div className="w-6 h-6 rounded-full bg-gradient-to-r from-purple-500 to-amber-500 flex items-center justify-center text-[11px] font-bold text-white">
+                    {currentUser.full_name.charAt(0)}
+                  </div>
+                )}
                 <div className="text-left hidden sm:block">
                   <div className="text-xs font-semibold text-slate-200 flex items-center gap-1">
                     {currentUser.full_name}
@@ -143,9 +151,17 @@ export default function Navbar() {
                       }`}
                     >
                       <div className="flex items-center space-x-2">
-                        <div className="w-6 h-6 rounded-full bg-slate-700 flex items-center justify-center text-[10px] font-bold">
-                          {member.full_name.charAt(0)}
-                        </div>
+                        {member.avatar_url ? (
+                          <img
+                            src={member.avatar_url}
+                            alt={member.full_name}
+                            className="w-7 h-7 rounded-full object-cover border border-slate-700 shrink-0"
+                          />
+                        ) : (
+                          <div className="w-7 h-7 rounded-full bg-slate-700 flex items-center justify-center text-[10px] font-bold shrink-0">
+                            {member.full_name.charAt(0)}
+                          </div>
+                        )}
                         <div>
                           <div className="font-medium text-slate-200">{member.full_name}</div>
                           <div className="text-[10px] text-slate-400">{member.email}</div>
