@@ -164,7 +164,7 @@ export const INITIAL_PERSONAS: Persona[] = [
       border: 'border-cyan-500/40',
       bgGradient: 'from-cyan-950/40 via-teal-900/10 to-transparent'
     },
-    avatar_url: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=600&q=80',
+    avatar_url: '/characters/sienna_torneu.jpg',
     banner_url: 'https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80',
     is_ai_disclosed: true,
     ai_disclosure_statement: 'Fictional AI Creator • Series: WILL VEGAS HIRE HER? • After Eight Digital Talent',
