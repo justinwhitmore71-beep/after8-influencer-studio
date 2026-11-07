@@ -122,7 +122,7 @@ export const INITIAL_PERSONAS: Persona[] = [
       border: 'border-indigo-500/40',
       bgGradient: 'from-indigo-950/40 via-purple-900/10 to-transparent'
     },
-    avatar_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+    avatar_url: '/characters/jackie_quintera.jpg',
     banner_url: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=80',
     is_ai_disclosed: true,
     ai_disclosure_statement: 'Fictional AI Creator • Series: WILL VEGAS HIRE HER? • After Eight Digital Talent',
@@ -328,7 +328,14 @@ export const INITIAL_CONTENT_ITEMS: ContentItem[] = [
     hook: 'You can make a fortune in Vegas. You can also spend it before Tuesday.',
     caption: 'Rule #1 from a real Vegas server: Never confuse gross tips with net freedom. Calculate your Exit Number before you start booking tables. 🍸📊\n\nFictional AI Creator • Series: WILL VEGAS HIRE HER? • @after8digital',
     hashtags: ['#WillVegasHireHer', '#JackieQuintera', '#TheExitNumber', '#VegasServers', '#WorkerReality'],
-    media_attachments: [],
+    media_attachments: [
+      {
+        id: 'med-jq-01',
+        url: '/characters/jackie_quintera.jpg',
+        type: 'image',
+        title: 'Jackie Quintera Visual Master Reference'
+      }
+    ],
     production_notes: 'Soul 2.0 ID d14fdf5c-91c6-40b8-9c1c-54bd62fcd55b. First still rejected for likeness drift; revised face+body composite awaiting Evan sign-off.',
     status: 'review',
     scheduled_at: '2026-11-13T21:00:00Z',
@@ -356,7 +363,14 @@ export const INITIAL_CONTENT_ITEMS: ContentItem[] = [
     hook: 'I like expensive things. I just don’t like everything that’s expensive.',
     caption: 'Work the season, live the year. Respect the staff, pack in one carry-on, and leave before the routine traps you. Welcome to Sienna’s Las Vegas. 🌴☀️\n\nFictional AI Creator • Series: WILL VEGAS HIRE HER? • @after8digital',
     hashtags: ['#WillVegasHireHer', '#SiennaTorneu', '#WorkTheSeason', '#ResortLife', '#TheCarryOnEdit'],
-    media_attachments: [],
+    media_attachments: [
+      {
+        id: 'med-jq-01',
+        url: '/characters/jackie_quintera.jpg',
+        type: 'image',
+        title: 'Jackie Quintera Visual Master Reference'
+      }
+    ],
     production_notes: 'Soul 2.0 ID 8ea0e6ab-e1d0-4953-a3bc-8cc118e0c97b. Founder accepted Still 01; 5-sec motion test queued. Awaiting final cut review.',
     status: 'scheduled',
     scheduled_at: '2026-11-14T18:00:00Z',
@@ -384,7 +398,14 @@ export const INITIAL_CONTENT_ITEMS: ContentItem[] = [
     hook: 'Three different girls. One Vegas audition season. Completely different reasons to be here.',
     caption: 'Ava thinks she can outwork the process. Jackie knows the math before the shift starts. Sienna is just working the season to fund the year. Who survives the hiring manager? 🎰✨\n\nFictional AI Ensemble Series: WILL VEGAS HIRE HER? • Produced by After Eight Digital Talent',
     hashtags: ['#WillVegasHireHer', '#After8Digital', '#VegasDrama', '#VegasAuditionSeason'],
-    media_attachments: [],
+    media_attachments: [
+      {
+        id: 'med-jq-01',
+        url: '/characters/jackie_quintera.jpg',
+        type: 'image',
+        title: 'Jackie Quintera Visual Master Reference'
+      }
+    ],
     production_notes: 'Ensemble cut. Needs Evan approval on master edit and voice tracks before release.',
     status: 'idea',
     created_by: 'usr-evan-surratt',
