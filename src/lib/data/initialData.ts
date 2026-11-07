@@ -80,7 +80,7 @@ export const INITIAL_PERSONAS: Persona[] = [
       border: 'border-amber-500/40',
       bgGradient: 'from-amber-950/40 via-amber-900/10 to-transparent'
     },
-    avatar_url: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80',
+    avatar_url: '/characters/ava_montcrief.jpg',
     banner_url: 'https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=1200&q=80',
     is_ai_disclosed: true,
     ai_disclosure_statement: 'Fictional AI Creator • Series: WILL VEGAS HIRE HER? • After Eight Digital Talent',
@@ -298,9 +298,9 @@ export const INITIAL_CONTENT_ITEMS: ContentItem[] = [
     media_attachments: [
       {
         id: 'med-ava-01',
-        url: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80',
+        url: '/characters/ava_montcrief.jpg',
         type: 'image',
-        title: 'Ava Training Stills'
+        title: 'Ava Casting Model Sheet (Private Review)'
       }
     ],
     production_notes: 'Soul 2.0 ID b7b1cebf-362c-48e4-b8a9-77801e1cd5c1. 12-15s VO. Founder accepted Still 01; pending motion cut and Evan release approval.',
