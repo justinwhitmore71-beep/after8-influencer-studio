@@ -122,15 +122,15 @@ export default function GeneratorPage() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {personas.map((p) => {
           const isSelected = p.id === activePersonaId;
-          const isHighRoller = p.archetype === 'high_roller';
-          const isNightlife = p.archetype === 'nightlife_insider';
+          const isRookie = p.archetype === 'rookie' || p.name.toLowerCase().includes('ava');
+          const isInsider = p.archetype === 'insider' || p.name.toLowerCase().includes('jackie');
 
           let activeStyle = 'border-amber-500/60 bg-amber-950/20 text-amber-200';
           let Icon = Crown;
-          if (isNightlife) {
+          if (isInsider) {
             activeStyle = 'border-purple-500/60 bg-purple-950/20 text-purple-200';
             Icon = GlassWater;
-          } else if (!isHighRoller) {
+          } else if (!isRookie) {
             activeStyle = 'border-cyan-500/60 bg-cyan-950/20 text-cyan-200';
             Icon = SunMedium;
           }

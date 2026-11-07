@@ -179,9 +179,9 @@ export default function Dashboard() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {personas.map((persona) => {
-            const isHighRoller = persona.archetype === 'high_roller';
-            const isNightlife = persona.archetype === 'nightlife_insider';
-            const isPoolside = persona.archetype === 'poolside_specialist';
+            const isRookie = persona.archetype === 'rookie' || persona.name.toLowerCase().includes('ava');
+            const isInsider = persona.archetype === 'insider' || persona.name.toLowerCase().includes('jackie');
+            const isWildcard = persona.archetype === 'wildcard' || persona.name.toLowerCase().includes('sienna');
 
             // Persona-specific social accounts
             const personaAccounts = socialAccounts.filter((a) => a.persona_id === persona.id);
@@ -191,17 +191,20 @@ export default function Dashboard() {
             let accentBorder = 'border-amber-500/30 hover:border-amber-500/60';
             let bgGlow = 'from-amber-950/20 via-slate-900 to-[#0C101D]';
             let badgeBg = 'bg-amber-500/10 text-amber-400 border-amber-500/30';
+            let roleLabel = 'THE ROOKIE';
             let Icon = Crown;
 
-            if (isNightlife) {
+            if (isInsider) {
               accentBorder = 'border-purple-500/30 hover:border-purple-500/60';
               bgGlow = 'from-purple-950/20 via-slate-900 to-[#0C101D]';
               badgeBg = 'bg-purple-500/10 text-purple-400 border-purple-500/30';
+              roleLabel = 'THE INSIDER';
               Icon = GlassWater;
-            } else if (isPoolside) {
+            } else if (isWildcard) {
               accentBorder = 'border-cyan-500/30 hover:border-cyan-500/60';
               bgGlow = 'from-cyan-950/20 via-slate-900 to-[#0C101D]';
               badgeBg = 'bg-cyan-500/10 text-cyan-400 border-cyan-500/30';
+              roleLabel = 'THE WILDCARD';
               Icon = SunMedium;
             }
 
@@ -230,7 +233,7 @@ export default function Dashboard() {
                       <div>
                         <h3 className="font-bold text-base text-white">{persona.name}</h3>
                         <span className={`inline-block px-2 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wider border ${badgeBg}`}>
-                          {persona.archetype.replace('_', ' ')}
+                          {roleLabel}
                         </span>
                       </div>
                     </div>

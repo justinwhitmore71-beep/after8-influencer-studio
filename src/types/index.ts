@@ -1,4 +1,4 @@
-export type PersonaArchetype = 'high_roller' | 'nightlife_insider' | 'poolside_specialist';
+export type PersonaArchetype = 'rookie' | 'insider' | 'wildcard';
 export type SocialPlatform = 'instagram' | 'tiktok';
 export type ContentPlatform = 'instagram' | 'tiktok' | 'both';
 

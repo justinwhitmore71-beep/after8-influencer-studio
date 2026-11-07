@@ -194,15 +194,15 @@ export default function Navbar() {
 
             {personas.map((persona) => {
               const isSelected = selectedPersonaId === persona.id;
-              const isHighRoller = persona.archetype === 'high_roller';
-              const isNightlife = persona.archetype === 'nightlife_insider';
+              const isRookie = persona.archetype === 'rookie' || persona.name.toLowerCase().includes('ava');
+              const isInsider = persona.archetype === 'insider' || persona.name.toLowerCase().includes('jackie');
               
               let Icon = Crown;
               let activeStyle = 'bg-amber-500 text-slate-950 shadow-amber-500/20';
-              if (isNightlife) {
+              if (isInsider) {
                 Icon = GlassWater;
                 activeStyle = 'bg-purple-600 text-white shadow-purple-500/20';
-              } else if (!isHighRoller) {
+              } else if (!isRookie) {
                 Icon = SunMedium;
                 activeStyle = 'bg-cyan-500 text-slate-950 shadow-cyan-500/20';
               }

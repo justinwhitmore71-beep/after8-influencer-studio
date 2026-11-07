@@ -93,8 +93,8 @@ function generatePersonaFallback(
   platform?: string,
   format?: string
 ) {
-  const isAva = persona.name.toLowerCase().includes('ava') || persona.archetype === 'high_roller';
-  const isJackie = persona.name.toLowerCase().includes('jackie') || persona.archetype === 'nightlife_insider';
+  const isAva = persona.name.toLowerCase().includes('ava') || persona.archetype === 'rookie';
+  const isJackie = persona.name.toLowerCase().includes('jackie') || persona.archetype === 'insider';
 
   if (isAva) {
     return {

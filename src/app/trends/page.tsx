@@ -160,15 +160,15 @@ export default function TrendsPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {filteredTrends.map((trend) => {
           const persona = personas.find((p) => p.id === trend.recommended_persona_id);
-          const isHighRoller = persona?.archetype === 'high_roller';
-          const isNightlife = persona?.archetype === 'nightlife_insider';
+          const isRookie = persona?.archetype === 'rookie' || persona?.name.toLowerCase().includes('ava');
+          const isInsider = persona?.archetype === 'insider' || persona?.name.toLowerCase().includes('jackie');
 
           let personaTheme = 'text-amber-400 bg-amber-500/10 border-amber-500/30';
           let Icon = Crown;
-          if (isNightlife) {
+          if (isInsider) {
             personaTheme = 'text-purple-400 bg-purple-500/10 border-purple-500/30';
             Icon = GlassWater;
-          } else if (!isHighRoller) {
+          } else if (!isRookie) {
             personaTheme = 'text-cyan-400 bg-cyan-500/10 border-cyan-500/30';
             Icon = SunMedium;
           }

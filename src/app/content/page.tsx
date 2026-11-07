@@ -368,11 +368,11 @@ function ContentPageContent() {
                   ) : (
                     stageItems.map((item) => {
                       const persona = personas.find((p) => p.id === item.persona_id);
-                      const isHighRoller = persona?.archetype === 'high_roller';
-                      const isNightlife = persona?.archetype === 'nightlife_insider';
-                      const badgeColor = isHighRoller
+                      const isRookie = persona?.archetype === 'rookie' || persona?.name.toLowerCase().includes('ava');
+                      const isInsider = persona?.archetype === 'insider' || persona?.name.toLowerCase().includes('jackie');
+                      const badgeColor = isRookie
                         ? 'text-amber-400 bg-amber-500/10 border-amber-500/30'
-                        : isNightlife
+                        : isInsider
                         ? 'text-purple-400 bg-purple-500/10 border-purple-500/30'
                         : 'text-cyan-400 bg-cyan-500/10 border-cyan-500/30';
 

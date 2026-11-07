@@ -292,13 +292,13 @@ function CalendarPageContent() {
                     <div className="mt-2 space-y-2">
                       {dayPosts.map((post) => {
                         const persona = personas.find((p) => p.id === post.persona_id);
-                        const isHighRoller = persona?.archetype === 'high_roller';
-                        const isNightlife = persona?.archetype === 'nightlife_insider';
+                        const isRookie = persona?.archetype === 'rookie' || persona?.name.toLowerCase().includes('ava');
+                        const isInsider = persona?.archetype === 'insider' || persona?.name.toLowerCase().includes('jackie');
                         
                         let cardColor = 'border-amber-500/40 bg-amber-950/20 text-amber-200';
-                        if (isNightlife) {
+                        if (isInsider) {
                           cardColor = 'border-purple-500/40 bg-purple-950/20 text-purple-200';
-                        } else if (!isHighRoller) {
+                        } else if (!isRookie) {
                           cardColor = 'border-cyan-500/40 bg-cyan-950/20 text-cyan-200';
                         }
 
@@ -391,9 +391,9 @@ function CalendarPageContent() {
                   <div className="space-y-1 mt-1">
                     {dayPosts.slice(0, 2).map((post) => {
                       const persona = personas.find((p) => p.id === post.persona_id);
-                      const isHighRoller = persona?.archetype === 'high_roller';
-                      const isNightlife = persona?.archetype === 'nightlife_insider';
-                      const bg = isHighRoller ? 'bg-amber-500/20 text-amber-300' : isNightlife ? 'bg-purple-500/20 text-purple-300' : 'bg-cyan-500/20 text-cyan-300';
+                      const isRookie = persona?.archetype === 'rookie' || persona?.name.toLowerCase().includes('ava');
+                      const isInsider = persona?.archetype === 'insider' || persona?.name.toLowerCase().includes('jackie');
+                      const bg = isRookie ? 'bg-amber-500/20 text-amber-300' : isInsider ? 'bg-purple-500/20 text-purple-300' : 'bg-cyan-500/20 text-cyan-300';
 
                       return (
                         <div key={post.id} className={`px-1 py-0.5 rounded text-[9px] truncate font-medium ${bg}`}>

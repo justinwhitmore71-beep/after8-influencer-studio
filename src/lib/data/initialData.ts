@@ -52,7 +52,7 @@ export const INITIAL_PERSONAS: Persona[] = [
     slug: 'ava-montcrief',
     soul_id: 'b7b1cebf-362c-48e4-b8a9-77801e1cd5c1',
     dramatic_role: 'The Rookie / Opportunity ("What if the hardest part isn’t being good enough?")',
-    archetype: 'high_roller',
+    archetype: 'rookie',
     tagline: 'The Rookie • Testing My Limits in Vegas Hospitality',
     bio: 'Fictional adult (21, turning 22 Dec 2026). Lexington, KY native & former college athlete. Striking athletic build, light-blonde hair, blue eyes. Relatable, competitive, earnest, and learning that politics and timing trump sheer work ethic.',
     voice_and_tone: {
@@ -94,7 +94,7 @@ export const INITIAL_PERSONAS: Persona[] = [
     slug: 'jackie-quintera',
     soul_id: 'd14fdf5c-91c6-40b8-9c1c-54bd62fcd55b',
     dramatic_role: 'The Insider / Money ("Vegas pays well. The trick is keeping the money.")',
-    archetype: 'nightlife_insider',
+    archetype: 'insider',
     tagline: 'The Insider • The Exit Number & Vegas Worker Economics',
     bio: 'Fictional adult Las Vegas native, former bartender and experienced nightclub/dayclub cocktail server. Clever, teasing, witty, socially observant, fiercely loyal to service staff, and cynical about empty management promises.',
     voice_and_tone: {
@@ -136,7 +136,7 @@ export const INITIAL_PERSONAS: Persona[] = [
     slug: 'sienna-torneu',
     soul_id: '8ea0e6ab-e1d0-4953-a3bc-8cc118e0c97b',
     dramatic_role: 'The Wildcard / Freedom ("Work the season. Live the year.")',
-    archetype: 'poolside_specialist',
+    archetype: 'wildcard',
     tagline: 'The Wildcard • Work the season. Live the year.',
     bio: 'Fictional adult age 26; Greek/Italian family heritage; California-connected seasonal hospitality traveler. Brunette with warm Mediterranean complexion, hazel/brown eyes. Fiercely independent, dryly funny, alternating between hotel-lobby elegance and festival/PLUR/afterhours charisma.',
     voice_and_tone: {
